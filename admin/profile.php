@@ -2,10 +2,15 @@
 $page_name = 'profile';
 
 
-require_once '../system/db-connect.php';
+#template
 require_once '../template/admin-header.php';
 require_once '../template/admin-nav.php';
-require_once '../system/functions/auto-load.php';
+
+#system
+// require '../system/functions/auto-load.php';
+require_once '../system/db-connect.php';
+require '../template/config.php';
+require '../system/functions/verify-user-info.php';
 
 
 // var_dump($_FILES);
@@ -74,9 +79,10 @@ if (isset($_POST['submitted'])) {
 
 
         if (!$query->execute())
-            die("ویرایش کاربر با خطا مواجه شد");
+            die("Unexpected Error 347682798: با پشتیبانی تماس بگیرید");
         
         showAlert("success" , "اطلاعات کاربر {$username} با موفقیت ویرایش شد.");
+
 
     }
 
@@ -85,7 +91,7 @@ if (isset($_POST['submitted'])) {
 }
 
 
-
+checkLogin(); // برای اینکه اطلاعات ویرایش شده داخل فیلدها آپدیت شوند
 
 
 ?>

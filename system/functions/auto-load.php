@@ -1,15 +1,18 @@
 <?php
 
-require_once 'authentication.php';
+require 'authentication.php';
 
-require_once 'count-table-rows.php';
+require 'count-table-rows.php';
 
-require_once 'pagination.php';
+require 'pagination.php';
 
-require_once 'verify-user-info.php';
+require 'verify-user-info.php';
 
-require_once 'verify-blog-info.php';
+require 'verify-blog-info.php';
 
-require_once 'photo.php';
+require 'photo.php';
 
-require_once 'show-alert.php';
+require 'show-alert.php';
+ 
+ 
+?>

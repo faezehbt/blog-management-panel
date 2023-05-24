@@ -1,8 +1,11 @@
 <?php
 require_once '../system/db-connect.php';
-require_once '../system/functions/auto-load.php';
+// require_once '../system/functions/auto-load.php';
 
 
+
+
+echo "WTF!!!!";
 
 // $query = $conn -> prepare("SELECT `id` FROM `userinfo`");
 
